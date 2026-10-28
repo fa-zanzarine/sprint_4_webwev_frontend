@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-jovi-dark: #14141c;
+  --color-jovi-blue: #0944b9;
+  --color-jovi-paper: #f5f4ef;
+  --color-jovi-line: #dcdad2;
+  --color-jovi-muted: #5c5c66;
+  --font-sans: "DM Sans", "Segoe UI", Arial, sans-serif;
+  --font-display: "Bricolage Grotesque", "DM Sans", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-jovi-paper font-sans leading-relaxed text-jovi-dark antialiased;
+}
+
+section[id] {
+  scroll-margin-top: 72px;
+}
